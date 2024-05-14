@@ -1,0 +1,5 @@
+---
+as: 100
+neighbor: 10.0.0.2
+neighbor_as: 200
+source_interface: 1.1.1.1

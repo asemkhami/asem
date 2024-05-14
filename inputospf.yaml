@@ -1,0 +1,5 @@
+---
+router_id: 10.0.0.1
+area: 0
+network: 10.0.0.1
+umask: 0.0.0.0
