@@ -29,13 +29,15 @@ push_config = ''
 if push_config == 'o':
     configuration = render_jinja2('ospf.j2',data1)
     c = configuration.splitlines()
-    connect.send_config_set(c)
+    out=connect.send_config_set(c)
+    print(out)
 if push_config == 'b':
     configuration = render_jinja2('BGP.j2',data)
     c = configuration.splitlines()
-    connect.send_config_set(c)
-
+    out=connect.send_config_set(c)
+    print(out)
 if push_config == 's':
     configuration = render_jinja2('static.j2',data2)
     c = configuration.splitlines()
-    connect.send_config_set(c)
+    out=connect.send_config_set(c)
+    print(out)
