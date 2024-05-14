@@ -4,7 +4,7 @@ import yaml
 from netmiko import ConnectHandler
 device = {
     'device_type' : 'cisco_ios',
-    'ip':'192.168.88.129',
+    'ip':'192.168.110.152',
     'username':'admin',
     'password':'admin',
 }
