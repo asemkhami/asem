@@ -24,8 +24,10 @@ def render_jinja2( jinja_file , jinja_argument):
     temp = env.get_template(jinja_file)
     out = temp.render(a=jinja_argument)
     return out
-push_config = ''
-#push_config = input("if you want ospf press o , if you want bgp press b and if you want static route press s :")
+def push ():
+    config = input("if you want ospf press o , if you want bgp press b and if you want static route press s :")
+    return config
+push_config = push()
 if push_config == 'o':
     configuration = render_jinja2('ospf.j2',data1)
     c = configuration.splitlines()
